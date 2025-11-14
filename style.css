@@ -26,16 +26,16 @@ html {
 
 /* Thème sombre (plus bleu, moins sombre) */
 body.dark {
-    --accent: #5dade2;        /* bleu plus doux pour accents */
+    --accent: #5dade2;
     --accent-light: #85c1e9;
     --mint: #4db6ac;
     --mint-light: #80cbc4;
     --text: #e0e0e0;
-    --bg: #1e2f3a;            /* bleu sombre clair */
-    --bg-alt: #294753;        /* bleu légèrement plus clair */
-    --header-bg: #1b3a57;     /* header bleu foncé doux */
+    --bg: #1e2f3a;
+    --bg-alt: #294753;
+    --header-bg: #1b3a57;
     --footer-bg: #1b3a57;
-    --white: #2e3e4e;         /* arrière-plan tableau en sombre */
+    --white: #2e3e4e;
 }
 
 /* Transitions générales */
@@ -64,7 +64,6 @@ header {
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
 }
 
-/* Header container */
 .header-container {
     position: relative;
     width: 90%;
@@ -79,7 +78,7 @@ header h1 {
     margin-bottom: 15px;
 }
 
-/* Bouton mode sombre en haut à droite */
+/* Bouton mode sombre */
 #theme-toggle {
     position: absolute;
     top: 15px;
@@ -98,7 +97,7 @@ header h1 {
     background: var(--mint-light);
 }
 
-/* Navigation centrée sous le titre */
+/* Navigation centrée */
 header nav {
     text-align: center;
     margin-top: 10px;
@@ -124,6 +123,38 @@ header nav ul li a {
 
 header nav ul li a:hover {
     opacity: 0.8;
+}
+
+/* Section À propos avec photo */
+.about-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1 1 60%;
+}
+
+.about-photo {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.about-photo img {
+    width: 150px;       /* réduit considérablement */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-photo figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: var(--text);
 }
 
 /* Sections */
@@ -170,7 +201,7 @@ table th {
 }
 
 body.dark table th {
-    background-color: #357a9d; /* bleu foncé mais atténué */
+    background-color: #357a9d;
     color: #fff;
 }
 
@@ -190,7 +221,7 @@ table tr:hover {
 }
 
 body.dark #contact a {
-    color: #80cbc4; /* lisible sur bleu sombre */
+    color: #80cbc4;
 }
 
 /* Footer */
@@ -222,5 +253,19 @@ footer {
     table th, table td {
         padding: 12px;
         font-size: 0.9em;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .about-photo {
+        flex: 1 1 100%;
+    }
+
+    .about-photo img {
+        width: 120px;       /* version mobile */
+        height: 120px;
     }
 }
