@@ -3,103 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio - DAUGER Bastien</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Portfolio - DAUGER Bastien</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>À propos de moi</h2>
-                <p>Je suis étudiant en <strong>troisième année de BUT Science des Données</strong> à l’Université Grenoble Alpes, parcours <em>Visualisation, Conception d’Outils Décisionnels (VCOD)</em>. Passionné par la data visualisation, le développement d’outils décisionnels et l’exploitation de bases de données, j’ai participé à plusieurs projets mettant en œuvre les compétences du programme national du BUT Science des Données.</p>
-            </div>
-        </section>
+<header>
+    <div class="container header-container">
+        <h1>Portfolio - DAUGER Bastien</h1>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Projets réalisés</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Titre du projet</th>
-                            <th>Description</th>
-                            <th>Compétences et Objectifs</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Dashboard décisionnel avec Power BI</td>
-                            <td>Création d’un tableau de bord interactif pour visualiser des indicateurs clés de performance à partir de données issues de différentes sources (SQL, Excel, API).</td>
-                            <td>
-                                <strong>CE1 :</strong> Traiter des données à des fins décisionnelles.<br>
-                                <strong>AC11 :</strong> Collecter, nettoyer et structurer les données pour leur exploitation.<br>
-                                <strong>AC12 :</strong> Réaliser des analyses exploratoires et descriptives pour identifier des tendances significatives.<br>
-                                <strong>AC13 :</strong> Assurer la qualité et la fiabilité des données analysées.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Développement d’une application web décisionnelle</td>
-                            <td>Développement d’une application web permettant de consulter et filtrer des données économiques en temps réel à l’aide de Chart.js.</td>
-                            <td>
-                                <strong>CE2 :</strong> Concevoir et administrer des bases de données adaptées à la décision.<br>
-                                <strong>AC21 :</strong> Concevoir le modèle logique et physique des données selon les besoins utilisateurs.<br>
-                                <strong>AC22 :</strong> Mettre en place et administrer un système de gestion de données.<br>
-                                <strong>AC23 :</strong> Intégrer et synchroniser plusieurs sources de données dans un outil décisionnel.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Visualisation de données interactives</td>
-                            <td>Conception d’une interface web avec D3.js permettant d’explorer des résultats d’analyse statistique à travers des visualisations dynamiques.</td>
-                            <td>
-                                <strong>CE3 :</strong> Valoriser une production dans un contexte professionnel.<br>
-                                <strong>AC31 :</strong> Produire des visualisations adaptées aux besoins décisionnels.<br>
-                                <strong>AC32 :</strong> Communiquer des résultats à travers des supports adaptés (tableaux de bord, rapports, interfaces).<br>
-                                <strong>AC33 :</strong> Adapter la restitution selon le public et le contexte professionnel.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Conception d’un outil décisionnel complet</td>
-                            <td>Réalisation d’un projet intégrant la chaîne complète : conception de la base de données, automatisation des traitements, et visualisation via un outil web déployé.</td>
-                            <td>
-                                <strong>CE4 :</strong> Développer et mettre en œuvre un outil décisionnel (parcours VCOD).<br>
-                                <strong>AC41 :</strong> Concevoir et développer des applications décisionnelles adaptées aux besoins métiers.<br>
-                                <strong>AC42 :</strong> Déployer un outil décisionnel et en assurer la maintenance et l’évolution.<br>
-                                <strong>AC43 :</strong> Automatiser les traitements de données pour optimiser les processus décisionnels.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <!-- Bouton Mode Sombre -->
+        <button id="theme-toggle">Mode sombre</button>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Pour toute question ou opportunité de collaboration, contactez-moi à 
-                    <a href="mailto:bastien.dauger@etu.univ-grenoble-alpes.fr"><strong>bastien.dauger@etu.univ-grenoble-alpes.fr</strong></a>
-                </p>
-            </div>
-        </section>
-    </main>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expériences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 DAUGER Bastien - Portfolio BUT Science des Données 3ᵉ année (VCOD)</p>
-        </div>
-    </footer>
+<section id="about">
+    <div class="container">
+        <h2>À propos de moi</h2>
+        <p>
+            Étudiant en troisième année de BUT Science des Données – parcours VCOD (Visualisation, Conception d’Outils Décisionnels) à l’Université Grenoble Alpes.  
+            Je travaille principalement sur l’exploitation et l’analyse de données déjà existantes,
+            la création de visualisations, le développement d’outils d’aide à la décision
+            et la production de tableaux de bord pour différents métiers.
+        </p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projets réalisés</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre du projet</th>
+                    <th>Description</th>
+                    <th>Compétences réellement mobilisées</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Analyse en Data Mining</td>
+                    <td>Analyse d’un jeu de données, exploration, interprétation des résultats et présentation via graphiques et tableaux.</td>
+                    <td>
+                        <strong>CE1 :</strong> AC13 – Analyse statistique / interprétation<br>
+                        <strong>CE3 :</strong> AC31 – Visualisation adaptée, AC32 – Rapport et synthèse
+                    </td>
+                </tr>
+                <tr>
+                    <td>Migration de données NoSQL</td>
+                    <td>Création d'une base de données dans un environnement NoSQL (Neo4J)</td>
+                    <td>
+                        <strong>CE1 :</strong> AC13 – Analyse des résultats de tests comparatifs<br>
+                        <strong>CE3 :</strong> AC31 – Visualisation des résultats, AC32 – Rapport d'étude technique
+                    </td>
+                </tr>
+                <tr>
+                    <td>Page JS – Visualisation interactive</td>
+                    <td>Développement d’une interface web en JavaScript utilisant D3.js / Chart.js pour visualiser un jeu de données existant.</td>
+                    <td>
+                        <strong>CE3 :</strong> AC31 – Visualisation de données<br>
+                        <strong>CE4 (VCOD) :</strong> AC41 – Développement d’un outil décisionnel, AC42 – Interface interactive en JS
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h2>Expériences Professionnelles</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Poste</th>
+                    <th>Entreprise</th>
+                    <th>Description</th>
+                    <th>Compétences réellement mobilisées</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data Analyst (Alternance)</td>
+                    <td>Groupe Samse – L’Entrepôt du Bricolage</td>
+                    <td>Analyses pour tout le groupe : reporting, tableaux de bord, outils décisionnels, visualisations adaptées aux métiers.</td>
+                    <td>
+                        <strong>CE1 :</strong> AC13 – Analyse statistique et interprétation<br>
+                        <strong>CE3 :</strong> AC31 – Visualisation professionnelle, AC32 – Tableaux de bord & reporting, AC33 – Communication aux équipes métiers<br>
+                        <strong>CE4 (VCOD) :</strong> AC41 – Développement d’outils décisionnels, AC42 – Interfaces / visualisations interactives
+                    </td>
+                </tr>
+                <tr>
+                    <td>Assistant E-commerce (Stage)</td>
+                    <td>L’Entrepôt du Bricolage</td>
+                    <td>Analyse des performances e-commerce, création de graphiques et tableaux de bord, suivi des ventes et produits.</td>
+                    <td>
+                        <strong>CE1 :</strong> AC13 – Analyse statistique simple<br>
+                        <strong>CE3 :</strong> AC31 – Visualisation, AC32 – Rapports pour l’équipe e-commerce
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>
+            Pour toute demande ou opportunité :  
+            <strong><a href="mailto:bastien.dauger@etu.univ-grenoble-alpes.fr">
+                bastien.dauger@etu.univ-grenoble-alpes.fr
+            </a></strong>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 DAUGER Bastien - Portfolio Data Science</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggle.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        toggle.textContent = body.classList.contains('dark') ? "Mode clair" : "Mode sombre";
+    });
+</script>
+
 </body>
 </html>
